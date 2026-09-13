@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>AI Shooting Challenge</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="logo">🏀 AI Shooting Challenge</div></header>
+<section class="page">
+<h1>2K式投篮训练</h1>
+<p>模拟最佳出手时机</p>
+<div class="meter"><div class="perfect">PERFECT</div></div>
+<button onclick="shoot()">投篮</button>
+<h2 id="result"></h2>
+</section>
+<script>
+function shoot(){
+let n=Math.random()*100;
+document.getElementById("result").innerHTML=n>85?"🔥 PERFECT":n>60?"👍 GOOD":"⏱ MISS";
+}
+</script>
+</body>
+</html>
